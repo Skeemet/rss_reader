@@ -9,7 +9,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('RSS News'),
+        title: Text('Raspberry pi News'),
       ),
       body: FutureBuilder(
         future: RssService().getFeed(),
@@ -36,7 +36,7 @@ class HomeScreen extends StatelessWidget {
                                 MaterialPageRoute(
                                     builder: (context) => WebViewContainer(item
                                         .link
-                                        .replaceFirst('http', 'https'))));
+                                        )));
                           },
                         );
                       });
